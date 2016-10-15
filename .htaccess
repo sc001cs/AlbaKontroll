@@ -1,0 +1,6 @@
+
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^albakontroll\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.albakontroll\.com$
+RewriteRule ^/?$ "http\:\/\/www\.albakontroll\.al" [R=301,L]
+

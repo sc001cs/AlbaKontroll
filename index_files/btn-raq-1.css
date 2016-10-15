@@ -1,0 +1,7 @@
+.phone_request{width:336px;}
+.phone_request .request a{width:184px;background:url(%%IMAGES_URL%%/sprite/sprite-nav-v2.png) no-repeat 0px -59px;}
+.phone_request .request a:hover{background-position:-210px -11px !important;}
+.btn_request span:hover,
+.btn_request:hover span,
+.btn_request span{background:url(%%IMAGES_URL%%/btn/btn_request.png) no-repeat 0 0 !important;}
+#bottom_request_btn{background:url(%%IMAGES_URL%%/sprite/sprite-nav-v2.png) no-repeat 0 -11px;width:184px;}

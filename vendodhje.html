@@ -1,0 +1,73 @@
+<a href="http://www.albakontroll.com/"><img src="images/koka.PNG" width="926" height="277"></a><br>
+Zyrat qendrore: Albakontroll "Pashko Vasa",<br>
+Vila nr. 2, Tiranë; <br>
+Nr. tel. +35542240819;<br>
+Dyqanet Albakontroll - Vodafone: Tiranë, Durrës, Gramsh, Prrenjas, Korçë, Ersekë, Memaliaj, Tepelenë, Delvinë. Agjensitë Doganore: Agjensia Doganore në Tiranë-Vorë ,
+Rinas, Durrës, Vlorë, Lezhë-Shëngjin, Shkodër, Han I Hotit, Muriqan, Morinë, Kapshticë, Qafë-Thanë.<br>
+Adresat e maileve dhe numrat e kontaktit: <br>
+info@albakontroll.com + 355692035077<br>
+office@albakontroll.com + 355682035077<br>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <title>Vendodhje</title>
+    <style>
+      html, body, #map-canvas {
+        height: 400px;
+        margin: 0px;
+        padding: 0px;
+		width:980px;
+		margin:0 auto;
+      }
+    </style>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+    <script>
+// This example displays a marker at the center of Australia.
+// When the user clicks the marker, an info window opens.
+
+function initialize() {
+  var myLatlng = new google.maps.LatLng(41.321826, 19.816320);
+  var mapOptions = {
+    zoom: 12,
+    center: myLatlng
+  };
+
+  var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+
+  var contentString = '<div id="content">'+
+      '<div id="siteNotice">'+
+      '</div>'+
+      '<h1 id="firstHeading" class="firstHeading">Top Tour Albania</h1>'+
+      '<div id="bodyContent">'+
+      'Address: Rr. Vaso Pasha ' +
+	    'Vila nr 2'+
+      'Tirana, Albania'+
+
+      '</div>'+
+      '</div>';
+
+  var infowindow = new google.maps.InfoWindow({
+      content: contentString
+  });
+
+  var marker = new google.maps.Marker({
+      position: myLatlng,
+      map: map,
+      title: 'Uluru (Ayers Rock)'
+	  
+  });
+  google.maps.event.addListener(marker, 'click', function() {
+    infowindow.open(map,marker);
+  });
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+
+    </script>
+  </head>
+  <body>
+    <div id="map-canvas"></div>
+  </body>
+</html>
